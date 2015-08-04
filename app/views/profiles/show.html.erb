@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3><%= @profile.name %></h3>
+        <p><%= image_tag(@profile.profile_pic_url, class: 'img-responsive') %></p>
+        <p>
+          <strong>About me</strong>
+          <%= @profile.bio %>
+        </p>
+<p>
+  <strong>Location:</strong>
+  <%= @profile.city %>, <%= @profile.country %>
+</p>
+<hr>
+<p><i class="fa fa-twitter"></i> <a href="http://twitter.com/<%= @profile.twitter %>" target="_black"><%= @profile.twitter %></a></p>
+<p><i class="fa fa-linkedin"></i> <%= @profile.linkedin %></p>
+<p><i class="fa fa-globe"></i> <%= link_to 'LinkedIn', @profile.linkedin %></p>
+
+<p>
+  <strong>startups:</strong>
+  <ul>
+  <% @profile.user.startups.each do |startup| %>
+  <li> <%= link_to startup.name, startup_path(startup) %></li>
+  <% end %>
+  </ul>
+  
+</p>
+
+<% if @profile == current_user.profile %>
+
+<%= link_to 'Edit', edit_profile_path(@profile), class: 'btn btn-warning btn-sm' %>
+
+<% end %>
+</div>
+</div>
+</div>
+</div>

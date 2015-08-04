@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: tiffwg
+  api_key: '776492123873796'
+  api_secret: bi3umPdTPr5G0AnhNS-_8rcLI-Q
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: tiffwg
+  api_key: '776492123873796'
+  api_secret: bi3umPdTPr5G0AnhNS-_8rcLI-Q
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: tiffwg
+  api_key: '776492123873796'
+  api_secret: bi3umPdTPr5G0AnhNS-_8rcLI-Q
+  enhance_image_tag: true
+  static_image_support: false
