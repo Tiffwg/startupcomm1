@@ -4,6 +4,12 @@ This is another change
 
 This is a change made in Github.
 
+<<<<<<<<<HEAD
+
+show me a merge conflict
+
+
+>>>>>>>>
 == README
 
 This README would normally document whatever steps are necessary to get the
